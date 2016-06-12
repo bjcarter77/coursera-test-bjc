@@ -7,15 +7,20 @@ body {
 #header-nav{
 text-align: left;
 background-color: gray;
-border: 3px black solid;
-min-height: 80px;
+border: 2px black solid;
+min-height: 30px;
+margin-bottom: 0;
 }
 .navbar-brand h1{
 color: black;
 font-size: 1.5em;
 }
+#collapsable-nav{
+  border-top: 1px black solid;
+}
 #nav-list{
-  margin-top: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
   background: #d5c0ff;
 }
 #nav-list a{
@@ -30,7 +35,7 @@ font-size: 1.5em;
   font-size: 1.8em;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-  border:1px solid black;
+ border:1px solid black;
 }
 /*header*/
 h2 {
