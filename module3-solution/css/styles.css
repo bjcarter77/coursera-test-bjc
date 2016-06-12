@@ -1,0 +1,45 @@
+body {
+  font-size: 16px;
+  color: #fff;
+}
+
+/*navbar*/
+#header-nav{
+text-align: left;
+background-color: gray;
+border: 3px black solid;
+min-height: 80px;
+}
+.navbar-brand h1{
+color: black;
+font-size: 1.5em;
+}
+#nav-list{
+  margin-top: 15px;
+  background: #d5c0ff;
+}
+#nav-list a{
+  text-align: center;
+  color: black;
+  border: 1px black solid;
+}
+#nav-list a:hover{
+  background: #e7e7e7;
+}
+#nav-list a span{
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border:1px solid black;
+}
+/*header*/
+h2 {
+  margin: 10px; 
+}
+/*body*/
+.container{
+  height: 1000px;
+  background-color: gray;
+  color: black;
+  margin-left: 15px;
+}
