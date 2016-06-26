@@ -133,7 +133,7 @@ function buildAndShowHomeHTML (categories) {
       // Use the existing insertHtml function for that purpose. Look through this code for an example   
       // of how to do that. 
       // ....
-      insertHTML("#main-content", homeHtmlToInsertIntoMainPage);
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage)
       //inserthtml("#main-content",  "randomCategoryShortName", "'" + chosenCategoryShortName + "'")
       //insertHtml("#main-content",  "randomCategoryShortName", "'" + L + "'")
       //insertHtml("#main-content",  "randomCategoryShortNameL")
