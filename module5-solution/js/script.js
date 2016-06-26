@@ -104,7 +104,10 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
-      console.log('chosenCategoryShortName' + chosenCategoryShortName);
+      //console.log('chosenCategoryShortName' + chosenCategoryShortName);
+      console.log(chosenCategoryShortName);
+      //var randomCategoryShortName = chosenCategoryShortName
+      //console.log(randomCategoryShortName);
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
@@ -118,15 +121,23 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       // 
       // var homeHtmlToInsertIntoMainPage = ....
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
-      console.log('homeHtmlToInsertIntoMainPage: ');
+      var homeHtmlToInsertIntoMainPage = 
+      insertProperty(homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
+     // insertProperty(categoriesTitleHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
+
+      //console.log('homeHtmlToInsertIntoMainPage: ');
       console.log(homeHtmlToInsertIntoMainPage);
+      
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example   
       // of how to do that. 
       // ....
-      innerHTML("#main-content", homeHtmlToInsertIntoMainPage);
+      insertHTML("#main-content", homeHtmlToInsertIntoMainPage);
+      //inserthtml("#main-content",  "randomCategoryShortName", "'" + chosenCategoryShortName + "'")
+      //insertHtml("#main-content",  "randomCategoryShortName", "'" + L + "'")
+      //insertHtml("#main-content",  "randomCategoryShortNameL")
+      //", "'" + L + "'")
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
